@@ -1,0 +1,190 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Estilos generales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Variables */
+
+:root {
+  --main-background-color: #fefaee;
+  --nav-footer-background-color: #4a7c59;
+  --nav-footer-letter-color: #c8d5b9;
+  --buttons-hover-background-color: #142005;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+/* Navbar */
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-footer-background-color);
+  padding: 0.1rem;
+}
+
+.container-fluid {
+  display: flex;
+  margin-left: 6rem;
+}
+
+.collapse ul li a {
+  color: var(--nav-footer-letter-color);
+  margin: 0.5rem;
+}
+
+img {
+  width: 50px;
+}
+
+.navbar-toggler {
+  border-color: #c8d5b9; /* Cambia el color del borde */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23c8d5b9' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Main */
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem auto; /* Centra el contenido */
+  max-width: 90%;
+  padding: 1rem;
+}
+
+/* Columna izquierda */
+.form-container,
+.results-container {
+  flex: 1;
+  min-width: 0; /* Evita desbordamiento */
+  border: 2px solid var(--nav-footer-background-color);
+  padding: 1.5rem;
+  background-color: var(--main-background-color);
+  border-radius: 8px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  margin: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+  text-decoration: underline;
+  display: block;
+  margin-right: 0.5rem;
+}
+
+input[type='number'],
+select {
+  min-width: 20%;
+  padding: 0.2rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.actions input:hover {
+  background-color: var(--buttons-hover-background-color);
+  transition-duration: 0.5s;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  color: var(--nav-footer-letter-color);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--nav-footer-background-color);
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--nav-footer-letter-color);
+}
+
+.custom-line {
+  width: 50%;
+  height: 0.1875rem;
+  background-color: var(--nav-footer-letter-color);
+  border: none;
+  margin: 0.25rem 0;
+}
+
+/* Estilo responsivo: Asegurar que quede alineado en pantallas pequeñas */
+@media (max-width: 992px) {
+  .container-fluid {
+    margin-left: 2rem;
+  }
+  .navbar-toggler {
+    margin-left: 0.5rem; /* Margen pequeño a la izquierda */
+    margin-right: 1rem; /* Separación adecuada a la derecha */
+  }
+
+  /* Opcional: Ajuste para el logo si existe */
+  .navbar-brand {
+    margin-right: auto; /* Mantiene el logo alineado a la izquierda */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  label {
+    margin-bottom: 1rem;
+  }
+}
