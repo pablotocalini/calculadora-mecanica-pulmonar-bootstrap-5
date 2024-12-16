@@ -60,7 +60,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="contacto.html"
+                href="contact.html"
                 class="nav-link"
                 >Contacto</a
               >
@@ -72,7 +72,7 @@
     <main>
       <div class="main-container">
         <section class="form-container">
-          <form action="">
+          <form>
             <div class="mb-3">
               <label
                 class="form-label"
@@ -282,6 +282,124 @@
         <div class="results-container">
           <h2>Resultados</h2>
           <p>Aquí se mostrarán los resultados...</p>
+          <div
+            class="hide-results"
+            id="results"
+          >
+            <p>
+              <span class="result-title">Peso Corporal Predicho:</span>
+              <span id="resultPredictedBodyWeight"></span> kg
+            </p>
+            <p>
+              <span class="result-title"
+                >Complacencia del Sistema respiratorio:</span
+              >
+              <span id="resultRespiratorySystemCompliance"></span> ml/cmH2O
+            </p>
+            <p>
+              <span class="result-title">Complacencia del Pulmón:</span>
+              <span id="resultPulmonaryCompliance"></span> ml/cmH2O
+            </p>
+            <p>
+              <span class="result-title"
+                >Complacencia de la caja torácica:</span
+              >
+              <span id="resultThoraxCompliance"></span> ml/cmH2O
+            </p>
+            <p>
+              <span class="result-title"
+                >Complacencia dinámica del Sistema respiratorio:</span
+              >
+              <span id="resultDinamicCompliance"></span> ml/cmH2O
+            </p>
+            <p>
+              <span class="result-title"
+                >Elastancia del Sistema respiratorio:</span
+              >
+              <span id="resultRespiratorySistemElastance"></span> cmH2O/l
+            </p>
+            <p>
+              <span class="result-title">Elastancia del Pulmón:</span>
+              <span id="resultPulmonaryElastance"></span> cmH2O/l
+            </p>
+            <p>
+              <span class="result-title">Elastancia de la caja torácica:</span>
+              <span id="resultThoraxElastance"></span> cmH2O/l
+            </p>
+            <p>
+              <span class="result-title"
+                >Resistencia inspiratoria máxima del Sistema respiratorio:</span
+              >
+              <span id="resultMaximalInspiratoryResistance"></span> cmH2O/l/seg
+            </p>
+            <p>
+              <span class="result-title"
+                >Resistencia espiratoria del Sistema respiratorio:</span
+              >
+              <span id="resultMaximalEspiratoryResistance"></span> cmH2O/l/seg
+            </p>
+            <p>
+              <span class="result-title"
+                >Constante de tiempo inspiratoria del Sistema
+                respiratorio:</span
+              >
+              <span id="resultInspiratoryTimeConstant"></span> seg
+            </p>
+            <p>
+              <span class="result-title">Driving pressure:</span>
+              <span id="resultDrivingPressure"></span> cmH2O
+            </p>
+            <p>
+              <span class="result-title">Volumen minuto:</span>
+              <span id="resultMinuteVolume"></span> l/min
+            </p>
+            <p>
+              <span class="result-title">Ratio Ventilatorio:</span>
+              <span id="resultVentilatoryRatio"></span>
+            </p>
+            <p>
+              <span class="result-title">Volumen Minuto Corregido:</span>
+              <span id="resultCorrectedMinuteVolume"></span> l/min
+            </p>
+            <p>
+              <span class="result-title"
+                >Mechanical Power del Sistema respiratorio:</span
+              >
+              <span id="resultMechanicalPower"></span> J/min
+            </p>
+            <p>
+              <span class="result-title"
+                >Presión transpulmonar de fin de inspiración segun Talmor:</span
+              >
+              <span id="resultTalmorInspiratoryTranspulmonaryPressure"></span>
+              cmH2O
+            </p>
+            <p>
+              <span class="result-title"
+                >Presión transpulmonar de fin de espiración segun Talmor:</span
+              >
+              <span id="resultTalmorEspiratoryTranspulmonaryPressure"></span>
+              cmH2O
+            </p>
+            <p>
+              <span class="result-title"
+                >Presión transpulmonar de fin de inspiración segun
+                Gattinoni:</span
+              >
+              <span
+                id="resultGattinoniInspiratoryTranspulmonaryPressure"
+              ></span>
+              cmH2O
+            </p>
+            <p>
+              <span class="result-title"
+                >Presión transpulmonar de fin de espiración segun
+                Gattinoni:</span
+              >
+              <span id="resultGattinoniEspiratoryTranspulmonaryPressure"></span>
+              cmH2O
+            </p>
+          </div>
         </div>
       </div>
     </main>
@@ -296,6 +414,10 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="js/index.js"
     ></script>
   </body>
 </html>
