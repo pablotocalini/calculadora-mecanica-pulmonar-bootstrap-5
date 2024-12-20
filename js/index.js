@@ -12,8 +12,8 @@ import {
   calculatePredictedBodyWeight,
   calculatePulmonaryCompliance,
   calculatePulmonaryElastance,
-  calculateRespiratorySistemCompliance,
-  calculateRespiratorySistemElastance,
+  calculateRespiratorySystemCompliance,
+  calculateRespiratorySystemElastance,
   calculateTalmorEspiratoryTranspulmonaryPressure,
   calculateTalmorInspiratoryTranspulmonaryPressure,
   calculateThoraxCompliance,
@@ -108,7 +108,7 @@ function calcular() {
     calculatePredictedBodyWeight(inputsValues);
 
   document.getElementById('resultRespiratorySystemCompliance').textContent =
-    calculateRespiratorySistemCompliance(inputsValues);
+    calculateRespiratorySystemCompliance(inputsValues);
 
   document.getElementById('resultPulmonaryCompliance').textContent =
     calculatePulmonaryCompliance(inputsValues);
@@ -119,8 +119,8 @@ function calcular() {
   document.getElementById('resultDinamicCompliance').textContent =
     calculateDinamicCompliance(inputsValues);
 
-  document.getElementById('resultRespiratorySistemElastance').textContent =
-    calculateRespiratorySistemElastance(inputsValues);
+  document.getElementById('resultRespiratorySystemElastance').textContent =
+    calculateRespiratorySystemElastance(inputsValues);
 
   document.getElementById('resultPulmonaryElastance').textContent =
     calculatePulmonaryElastance(inputsValues);

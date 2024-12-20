@@ -1,7 +1,7 @@
 //Functions for calculate Basic Pulmonary Mechanics
-//Compliance: Respiratory sistem, Respiratory sistem in liters, Pulmonary, Thorax, Dinamic,
+//Compliance: Respiratory system, Respiratory system in liters, Pulmonary, Thorax, Dinamic,
 
-export function calculateRespiratorySistemCompliance(inputsValues) {
+export function calculateRespiratorySystemCompliance(inputsValues) {
   return (
     inputsValues.tidalVolumen /
     (inputsValues.plateauPressure - inputsValues.totalPeep)
@@ -32,9 +32,9 @@ export function calculateDinamicCompliance(inputsValues) {
   ).toFixed(1);
 }
 
-//Elastance: Respiratory sistem, Pulmonary, Thorax
+//Elastance: Respiratory system, Pulmonary, Thorax
 
-export function calculateRespiratorySistemElastance(inputsValues) {
+export function calculateRespiratorySystemElastance(inputsValues) {
   return (
     (inputsValues.plateauPressure - inputsValues.totalPeep) /
     (inputsValues.tidalVolumen / 1000)

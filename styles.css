@@ -50,7 +50,8 @@ nav {
   margin-left: 6rem;
 }
 
-.collapse ul li a {
+.collapse ul li a,
+.collapse ul li span {
   color: var(--nav-footer-letter-color);
   margin: 0.5rem;
 }
@@ -136,6 +137,7 @@ input[type='reset'] {
 .result-title {
   font-weight: bold;
 }
+
 .show-results {
   display: block;
 }
